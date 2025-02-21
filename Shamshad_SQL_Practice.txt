@@ -1,0 +1,116 @@
+/* 16. Not equal to Condition:
+
+   Syntax:-
+   Select*
+   From Table_name
+   Where not column_name="value"
+
+   Select*
+   From Customers
+   Where not first_name="John"
+
+   Select*
+   From Orders
+   Where not item="Keyboard"
+
+   Select*
+   From Shippings
+   Where not status="Pending"*/
+
+/* 17 Joins(left,right,inner,outer)
+
+   Syntax:-
+   Select*
+   From Table1(Base_Table)
+   inner join table2(Child_Table)
+   On Table1.colun_name=Table2.column_name
+
+   Select*
+   From Customers
+   inner join Orders
+   On Customers.customer_id=Orders.customer_id
+
+   Select*
+   From Customers
+   left join Orders
+   On Customers.customer_id=Orders.customer_id*/
+
+/* Select*
+   From Customers
+   right join Orders
+   On Customers.customer_id=Orders.customer_id
+
+   Select*
+   From Customers
+   outer join Orders
+   On Customers.customer_id=Orders.customer_id*/
+
+/* 18. In Condition
+
+   Syntax:-
+   Select*
+   From Table_name
+   Where column_name in ("value1",value2")
+                      
+   Select*
+   From Customers
+   Where first_name in ("Robert","John")
+
+   Select*
+   From Orders
+   Where item in ("Keyboard","Monitor")
+
+   Select*
+   From Shippings
+   Where customer in ("2","3")
+
+   Select*
+   From Shippings
+   Where customer in (2,3)*/
+
+/* 19. Between:
+
+   Syntax:-
+   Select*
+   From Table_name
+   Where column between value1 and value2
+
+   Select*
+   From Customers
+   Where  age between 22 and 25*/
+
+/* 20. Column delete:
+
+   Syntax:-
+   Alter Table Table_name
+   Drop column column_name
+
+   Alter Table Orders
+   Drop column amount
+
+   Alter Table Customers
+   Drop column last_name*/
+
+/* 25. (Not  in) Condition:
+
+   Syntax:-
+   Select*
+   From Table_name
+   Where column_name not in ("value1","value2")
+
+   Select*
+   From Orders
+   Where item not in ("Mouse","Monitor")
+
+   Select*
+   From Customers
+   Where first_name not in ("John","Betty")
+
+   Select*
+   From Customers
+   Where country not in ("USA","UAE")
+
+   Select*
+   From Shippings
+   Where customer not in (2,5)*/
+
